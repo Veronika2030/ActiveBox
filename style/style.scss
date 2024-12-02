@@ -33,35 +33,35 @@ $mainFont: "Raleway", serif;
         align-items: center;
     }
 
-    &__nav-list {
-        display: inline-flex;
-        justify-content: flex-end;
-        list-style-type: none;
-    }
-
-    &__nav-list-item {
-        min-width: 134px;
-        text-align: center;
-    }
-
-    &__nav-link {
-        font-family: $mainFont;
-        @include font(13px, 15px, 700, #fff);
-        text-decoration: none;
-        text-transform: uppercase;
-        border-bottom: 3px solid transparent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 36px 0 32px;
-
-        &:hover {
-            border-bottom: 3px solid #BABBC5;
+    .nav {
+        &__list {
+            display: inline-flex;
+            justify-content: flex-end;
+            list-style-type: none;
         }
 
-        &:active {
-            @include font(13px, 15px, 700, #E71414);
-            border-bottom: 3px solid #E71414;
+        &__item {
+            min-width: 134px;
+            text-align: center;
+        }
+
+        &__link {
+            font-family: $mainFont;
+            @include font(13px, 15px, 700, #fff);
+            text-decoration: none;
+            text-transform: uppercase;
+            border-bottom: 3px solid transparent;
+            display: block;
+            padding: 36px 0 32px;
+
+            &:hover {
+                border-bottom: 3px solid #BABBC5;
+            }
+
+            &:active {
+                @include font(13px, 15px, 700, #E71414);
+                border-bottom: 3px solid #E71414;
+            }
         }
     }
 }
@@ -93,12 +93,6 @@ $mainFont: "Raleway", serif;
 
     &__container {
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    &__desc {
         width: 100%;
         max-width: 1170px;
         text-align: center;
@@ -151,14 +145,15 @@ $mainFont: "Raleway", serif;
     &__element {
         max-width: 370px;
         text-align: center;
-        justify-content: space-between;
     }
 
     &__wrapper-icon {
         margin: 0 auto 29px;
         width: 100px;
         height: 100px;
-        align-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__title {
@@ -177,11 +172,11 @@ $mainFont: "Raleway", serif;
 .work {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
 
     &__wrapper {
         position: relative;
         padding-top: 100%;
-        border: 2px solid #FFFFFF;
     }
 
     &__image {
@@ -222,12 +217,14 @@ $mainFont: "Raleway", serif;
     }
 
     &__title {
+        font-family: $mainFont;
         @include font(24px, 28px, 900, #fff);
         text-transform: uppercase;
         margin-bottom: 20px;
     }
 
     &__text {
+        font-family: $mainFont;
         @include font(18px, 21px, 400, #fff);
     }
 }

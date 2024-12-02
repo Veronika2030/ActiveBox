@@ -35,7 +35,7 @@
           align-items: center;
 }
 
-.header__nav-list {
+.header .nav__list {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -45,12 +45,12 @@
   list-style-type: none;
 }
 
-.header__nav-list-item {
+.header .nav__item {
   min-width: 134px;
   text-align: center;
 }
 
-.header__nav-link {
+.header .nav__link {
   font-family: "Raleway", serif;
   font-size: 13px;
   font-weight: 700;
@@ -59,23 +59,15 @@
   text-decoration: none;
   text-transform: uppercase;
   border-bottom: 3px solid transparent;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: block;
   padding: 36px 0 32px;
 }
 
-.header__nav-link:hover {
+.header .nav__link:hover {
   border-bottom: 3px solid #BABBC5;
 }
 
-.header__nav-link:active {
+.header .nav__link:active {
   font-size: 13px;
   font-weight: 700;
   line-height: 15px;
@@ -110,18 +102,6 @@
 
 .banner__container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.banner__desc {
   width: 100%;
   max-width: 1170px;
   text-align: center;
@@ -188,17 +168,21 @@
 .about__element {
   max-width: 370px;
   text-align: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .about__wrapper-icon {
   margin: 0 auto 29px;
   width: 100px;
   height: 100px;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about__title {
@@ -224,12 +208,12 @@
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
 }
 
 .work__wrapper {
   position: relative;
   padding-top: 100%;
-  border: 2px solid #FFFFFF;
 }
 
 .work__image {
@@ -284,6 +268,7 @@
 }
 
 .work__title {
+  font-family: "Raleway", serif;
   font-size: 24px;
   font-weight: 900;
   line-height: 28px;
@@ -293,6 +278,7 @@
 }
 
 .work__text {
+  font-family: "Raleway", serif;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
