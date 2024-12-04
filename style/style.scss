@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Raleway", serif;
 }
 
 @mixin font($font-size, $line-height, $font-weight, $color) {
@@ -175,6 +176,7 @@ $mainFont: "Raleway", serif;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2px;
+    margin-bottom: 116px;
 
     &__wrapper {
         position: relative;
@@ -226,6 +228,221 @@ $mainFont: "Raleway", serif;
     }
 
     &__text {
+        font-family: $mainFont;
+        @include font(18px, 21px, 400, #fff);
+    }
+}
+
+.team {
+    margin-bottom: 114px;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 30px;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1170px;
+    }
+
+    &__card {
+        max-width: 270px;
+        width: 100%;
+    }
+
+    &__card-wrapper {
+        width: 270px;
+        height: 270px;
+        overflow: hidden;
+        margin-bottom: 30px;
+    }
+
+    &__team__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__name {
+        font-family: $mainFont;
+        @include font(24px, 28px, 700, #2D3033);
+        text-transform: capitalize;
+        margin-bottom: 20px;
+    }
+
+    &__job {
+        font-family: $mainFont;
+        @include font(18px, 21px, 400, #FF4343);
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    &__about {
+        font-family: $mainFont;
+        @include font(18px, 21px, 400, #6C7279);
+        margin-bottom: 38px;
+    }
+
+    &__icons {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 39px);
+        grid-template-rows: 39px;
+        column-gap: 6px;
+        justify-content: start;
+    }
+
+    &__icon-wrapper {
+        border: 1px solid #C6CBCD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.testimonials {
+    margin-bottom: 114px;
+
+    &__wrapper-image {
+        width: 45%;
+    }
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    &__content {
+        display: flex;
+        background-color: #5C3249;
+        position: relative;
+    }
+
+    &__desc {
+        width: 55%;
+        padding: 116px 170px 116px 130px;
+    }
+
+    &__text {
+        font-family: 'Cardo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 49px;
+        text-transform: capitalize;
+        color: #FFFFFF;
+        padding: 17px 0px;
+    }
+
+    &__author {
+        font-family: $mainFont;
+        @include font(13px, 15px, 700, #fff);
+        text-transform: uppercase;
+        padding: 6.5px 0px;
+    }
+}
+
+.download {
+    margin-bottom: 114px;
+    text-align: center;
+
+    &__title {
+        font-family: $mainFont;
+        @include font(30px, 35px, 500, #000);
+        margin-bottom: 6px;
+        padding: 17.5px 0px;
+    }
+
+    &__text {
+        font-family: $mainFont;
+        @include font(18px, 21px, 700, #000);
+        text-transform: uppercase;
+        margin-bottom: 48px;
+    }
+
+    &__button {
+        font-family: $mainFont;
+        @include font(24px, 28px, 900, #fff);
+        text-transform: uppercase;
+        background-color: #FF4343;
+        padding: 26px 10px;
+        width: 100%;
+        max-width: 370px;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #E71414;
+        }
+
+        &:active {
+            box-shadow: 4px 4px 30px #FF4343;
+        }
+    }
+}
+
+%footer-container {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 30px;
+    // margin-bottom: 67px;
+    padding: 71px 0px 67px;
+}
+
+.footer {
+    background-color: #353C65;
+    // padding: 71px 0 px 24px;
+
+    .container {
+        @extend %footer-container;
+    }
+
+    &__item {
+        max-width: 370px;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__title {
+        font-family: $mainFont;
+        @include font(18px, 21px, 700, #fff);
+        text-transform: uppercase;
+        margin-bottom: 29px;
+    }
+
+    &__text {
+        font-family: $mainFont;
+        @include font(18px, 21px, 400, #fff);
+    }
+
+    &__icons {
+        display: inline-grid;
+        grid-template-columns: repeat(3, 39px);
+        grid-template-rows: 39px;
+        column-gap: 6px;
+        justify-content: start;
+        margin-top: 20px;
+    }
+
+    &__icon-wrapper {
+        border: 1px solid #C6CBCD;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__copyright {
+        background-color: #2C3154;
+        padding: 24px 570.5px;
+        text-align: center;
+    }
+
+    &__copyright-text {
+        font-family: $mainFont;
+        @include font(18px, 21px, 400, #808080);
+    }
+
+    &__copyright-name {
         font-family: $mainFont;
         @include font(18px, 21px, 400, #fff);
     }
