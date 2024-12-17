@@ -55,6 +55,7 @@ $mainFont: "Raleway", serif;
         border-bottom: 3px solid transparent;
         display: block;
         padding: 36px 0 32px;
+        transition: all 0.3s linear;
 
         &:hover {
             border-bottom: 3px solid #BABBC5;
@@ -123,6 +124,7 @@ $mainFont: "Raleway", serif;
         max-width: 370px;
         border: none;
         cursor: pointer;
+        transition: all 0.3s linear;
 
         &:hover {
             background-color: #E71414;
@@ -202,6 +204,7 @@ $mainFont: "Raleway", serif;
         justify-content: center;
         align-items: center;
         padding: 10px;
+        transition: all 0.3s linear;
 
         &:hover {
             opacity: 1;
@@ -288,6 +291,7 @@ $mainFont: "Raleway", serif;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.3s linear;
 
         &:hover {
             background-color: #FF4343;
@@ -372,6 +376,7 @@ $mainFont: "Raleway", serif;
         max-width: 370px;
         border: none;
         cursor: pointer;
+        transition: all 0.3s linear;
 
         &:hover {
             background-color: #E71414;
@@ -387,8 +392,6 @@ $mainFont: "Raleway", serif;
     display: flex;
     justify-content: space-between;
     column-gap: 30px;
-    margin-bottom: 67px;
-
 }
 
 .footer {
@@ -398,6 +401,7 @@ $mainFont: "Raleway", serif;
 
     .container {
         @extend %footer-container;
+        margin-bottom: 67px;
     }
 
     &__item {
@@ -431,6 +435,7 @@ $mainFont: "Raleway", serif;
         display: flex;
         align-items: center;
         justify-content: center;
+        transition: all 0.3s linear;
 
         &:hover {
             background-color: #FF4343;
@@ -447,16 +452,18 @@ $mainFont: "Raleway", serif;
         text-align: center;
     }
 
-    .containers {
+    &__container-bottom {
         max-width: 1210px;
         width: 100%;
         padding: 0 20px;
-        margin: 0 auto;
+        margin: 0px auto;
     }
 
     &__copyright-text {
         font-family: $mainFont;
         @include font(18px, 21px, 400, #808080);
+        max-width: 370px;
+        margin: 0 auto;
     }
 
     &__copyright-name {

@@ -62,6 +62,8 @@
   border-bottom: 3px solid transparent;
   display: block;
   padding: 36px 0 32px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .nav__link:hover {
@@ -142,6 +144,8 @@
   max-width: 370px;
   border: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .banner__button:hover {
@@ -250,6 +254,8 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .work__content:hover {
@@ -369,6 +375,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .team__icon:hover {
@@ -475,6 +483,8 @@
   max-width: 370px;
   border: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .download__button:hover {
@@ -495,12 +505,15 @@
           justify-content: space-between;
   -webkit-column-gap: 30px;
           column-gap: 30px;
-  margin-bottom: 67px;
 }
 
 .footer {
   background-color: #353C65;
   padding-top: 71px;
+}
+
+.footer .container {
+  margin-bottom: 67px;
 }
 
 .footer__item {
@@ -552,6 +565,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .footer__icon:hover {
@@ -568,11 +583,11 @@
   text-align: center;
 }
 
-.footer .containers {
+.footer__container-bottom {
   max-width: 1210px;
   width: 100%;
   padding: 0 20px;
-  margin: 0 auto;
+  margin: 0px auto;
 }
 
 .footer__copyright-text {
@@ -581,6 +596,8 @@
   font-weight: 400;
   line-height: 21px;
   color: #808080;
+  max-width: 370px;
+  margin: 0 auto;
 }
 
 .footer__copyright-name {
